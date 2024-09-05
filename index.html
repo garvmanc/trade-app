@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <!-- Company Name -->
+        <a class="navbar-brand" href="#">definanC</a>
+
+        <!-- Navbar Links -->
+        <div class="navbar-links">
+          <a class="nav-link" href="#sus-stocks">Suspicious Stocks</a>
+          <a class="nav-link" href="#predictor">Predictor</a>
+          <a class="nav-link" href="https://www.tradingview.com">Tradingview</a>
+          <a class="nav-link" href="https://www.groww.com">Groww</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:600px;width: 950px;">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+    <div class="rating"><h2>Stock Analysis Overview</h2>
+      <p>
+        This chart provides real-time data on the stock performance of NSE:RELIANCE. 
+        You can track daily price movements and analyze the trends to make informed investment decisions.
+      </p></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
